@@ -1,5 +1,7 @@
 # Invisto+ 📈💼
 
+🌍 Read this in [English](README.en.md)
+
 Invisto+ é um projeto desenvolvido para treinar conceitos avançados de programação orientada a objetos em Java, explorando **interfaces**, **classes abstratas**, **generics** e **herança**.
 
 O sistema simula uma carteira de investimentos, permitindo operações como **comprar**, **vender**, **resgatar** e **calcular rendimento** de diferentes tipos de ativos financeiros.
