@@ -85,12 +85,15 @@ java src/Main.java
 
 ---
 
-## 📌 Próximas Melhorias
+## 📌 Roadmap & Próximas Melhorias
 
-* Persistência de dados com arquivos ou banco
-* Interface gráfica (JavaFX ou Web)
-* Relatórios de desempenho da carteira
-* Testes unitários com JUnit
+Consulte o documento completo de [ROADMAP.md](ROADMAP.md) para acompanhar o plano detalhado de evolução do projeto para uma aplicação Fullstack de nível corporativo (Production-Ready):
+
+* **Fase 1:** Migração para **Spring Boot 3.x (Java 21)**, uso de **BigDecimal** para precisão financeira e persistência com **PostgreSQL + Flyway**.
+* **Fase 2:** Criação de **REST API** e documentação interativa com **Swagger / OpenAPI 3**.
+* **Fase 3:** Suíte robusta de testes automatizados com **JUnit 5 + Mockito + Testcontainers**.
+* **Fase 4:** Desenvolvimento de Frontend moderno em **Vue.js 3** ou **React**.
+* **Fase 5:** Orquestração completa com **Docker Compose** e pipeline de CI/CD com **GitHub Actions**.
 
 ---
 
