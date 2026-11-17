@@ -126,16 +126,6 @@ Use Git tags to view specific versions:
 
 ---
 
-## 📖 Additional Resources
-
-- **[Detailed Roadmap](./ROADMAP.md)** — Complete evolution plan
-- **[Backend README (EN)](./backend/README.md)** — API documentation
-- **[Backend README (PT)](./backend/README-PT.md)** — Documentação da API em português
-- **[Console README](./console/README.md)** — Original project documentation
-- **[Portuguese version](./README-PT.md)** — Versão em português
-
----
-
 ## 🤝 Contributions
 
 Feel free to contribute! Open an **Issue** or submit a **Pull Request**.
