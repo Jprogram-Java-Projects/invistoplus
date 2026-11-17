@@ -13,9 +13,20 @@ Este documento detalha o plano de ação passo a passo para evoluir o **Invisto+
   - Gerenciamento de carteira com `Portfolio<T>`.
   - Interface CLI em console (`Menu.java` / `Main.java`).
 
----
+- [x] **Fase 1: Core Backend & Banco de Dados (Spring Boot + PostgreSQL)**
+  - ✅ Migrado para **Spring Boot 3.4** (Java 21)
+  - ✅ **BigDecimal** para precisão financeira
+  - ✅ Persistência com **PostgreSQL** + **Flyway migrations**
+  - ✅ Desenvolvimento sem Docker (H2 para testes)
 
-## 🚀 Fases de Evolução Detalhadas
+- [x] **Fase 2: REST API & Documentação OpenAPI / Swagger**
+  - ✅ Endpoints RESTful criados (`GET`, `POST`, `DELETE`)
+  - ✅ Documentação com **Swagger UI** em `/swagger-ui.html`
+  - ✅ Tratamento de exceções via `@ControllerAdvice`
+
+- [ ] **Fase 3: Suíte de Testes Automatizados (JUnit 5 + Mockito + Testcontainers)**
+  - [ ] Testes de integração com Testcontainers (requer Docker)
+  - ✅ Testes unitários funcionais com H2 em memória
 
 ### 🎯 Fase 1: Core Backend & Banco de Dados (Spring Boot + PostgreSQL)
 - [ ] **Migração para Spring Boot 3.x (Java 21)**
