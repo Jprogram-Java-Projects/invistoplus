@@ -1,5 +1,7 @@
 # Invisto+ - Carteira de Investimentos
 
+🌍 **English version → [README.md](README.md)**
+
 🎓 **Projeto Fullstack completo demonstrando evolução de Java 21 POO até Spring Boot 3.4**
 
 ---
@@ -127,9 +129,10 @@ Use as tags do Git para ver versões específicas:
 ## 📖 Recursos Adicionais
 
 - **[Roadmap Detalhado](./ROADMAP.md)** — Plano completo de evolução
-- **[Backend README](./backend/README.md)** — Documentação da API
+- **[Backend README (EN)](./backend/README.md)** — Documentação da API
+- **[Backend README (PT)](./backend/README-PT.md)** — Documentação da API em português
 - **[Console README](./console/README.md)** — Documentação do projeto original
-- **[Read in English](./README.md)** — English version
+- **[English README.md](./README.md)** — English version
 
 ---
 

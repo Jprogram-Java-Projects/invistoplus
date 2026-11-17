@@ -1,5 +1,7 @@
 # Invisto+ - Investment Portfolio
 
+🌍 **Read this in Portuguese → [README-PT.md](./README-PT.md)**
+
 🎓 **Full-stack project demonstrating evolution from Java 21 OOP to Spring Boot 3.4**
 
 ---
@@ -127,9 +129,10 @@ Use Git tags to view specific versions:
 ## 📖 Additional Resources
 
 - **[Detailed Roadmap](./ROADMAP.md)** — Complete evolution plan
-- **[Backend README](./backend/README.md)** — API documentation
+- **[Backend README (EN)](./backend/README.md)** — API documentation
+- **[Backend README (PT)](./backend/README-PT.md)** — Documentação da API em português
 - **[Console README](./console/README.md)** — Original project documentation
-- **[Leia em Português](./README-PT.md)** — Versão em português
+- **[Portuguese version](./README-PT.md)** — Versão em português
 
 ---
 

@@ -1,5 +1,7 @@
 # Invisto+ Backend (Spring Boot REST API)
 
+🌍 **Read this in Portuguese → [README-PT.md](README-PT.md)**
+
 Professional REST API built with **Spring Boot 3.4** for managing investment portfolios.
 
 ---

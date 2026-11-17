@@ -1,46 +1,48 @@
-# Invisto+ Console (POO Puro)
+# Invisto+ Console (Pure OOP)
 
-Versão original do projeto desenvolvida para treinar **conceitos avançados de Programação Orientada a Objetos em Java 21**.
+Invisto+ is designed to practice advanced Object-Oriented Programming concepts in Java 21, exploring **interfaces**, **abstract classes**, **generics**, and **inheritance**.
 
----
-
-## 🎯 Objetivos do Projeto
-
-* Aplicar **Interface** e **Polimorfismo**
-* Criar uma **classe abstrata** base para tipos de investimentos
-* Utilizar **Generics** para garantir segurança de tipos
-* Implementar **herança** para especializar investimentos
-* Estimular boas práticas com responsabilidade de classes e coesão
+The system simulates an investment portfolio, allowing operations such as **buy**, **sell**, **withdraw**, and **calculate returns** for different types of financial assets.
 
 ---
 
-## 🧩 Estrutura do Sistema
+## ✅ Project Objectives
+
+* Apply **Interfaces** and **Polymorphism**
+* Create an **abstract base class** for investment types
+* Use **Generics** to ensure type safety
+* Implement **inheritance** to specialize investments
+* Encourage clean design, class responsibility, and cohesion
+
+---
+
+## 🧩 System Structure
 
 ### 🔹 Interface `Investment`
 
-Métodos essenciais:
+Essential methods:
 
-* `calculateYield()` — cálculo do rendimento
-* `getName()` — identificação do ativo
+* `calculateYield()` — yield calculation
+* `getName()` — asset identification
 
-### 🔹 Classe Abstrata `TypesInvestments<T>`
+### 🔹 Abstract Class `TypesInvestments<T>`
 
-Define comportamento padrão e contratos genéricos para:
+Defines default behavior and generic contracts for:
 
-* `getName()` — herança
-* `addInvestment()` — gerenciamento interno
-* `listInvestments()` — exibição
-* `totalYield()` — cálculo consolidado via Stream API
+* `getName()` — inheritance
+* `addInvestment()` — internal management
+* `listInvestments()` — display
+* `totalYield()` — consolidated calculation via Stream API
 
-### 🔹 Classes Concretas
+### 🔹 Concrete Classes
 
-* `Stock` 🏛️ — renda variável
-* `InvestmentFund` 📊 — fundos diversificados
-* `PublicBond` 🏦 — renda fixa
+* `Stock` 🏛️ — variable income (equity)
+* `InvestmentFund` 📊 — diversified funds
+* `PublicBond` 🏦 — fixed income
 
 ---
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
 ```bash
 javac src/**/*.java
@@ -49,8 +51,15 @@ java src/br/com/invistoplus/Main.java
 
 ---
 
-## 📌 Versão
+## 📌 Version
 
-* Tag Git: `v0.0.1`
+* Git Tag: `v0.0.1`
 * Java 21
-* POO pura - sem frameworks
+* Pure OOP - no frameworks
+
+---
+
+## 📖 Additional Resources
+
+- **[English README.md](../README.md)** — Project overview in English
+- **[Portuguese version](./README-PT.md)** — Versão em português
