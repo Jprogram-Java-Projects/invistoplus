@@ -1,46 +1,46 @@
-# Invisto+ - Carteira de Investimentos
+# Invisto+ - Investment Portfolio
 
-🎓 **Projeto Fullstack completo demonstrando evolução de Java 21 POO até Spring Boot 3.4**
+🎓 **Full-stack project demonstrating evolution from Java 21 OOP to Spring Boot 3.4**
 
 ---
 
-## 📌 Visão Geral
+## 📌 Overview
 
-O **Invisto+** é um projeto educacional e demonstração técnica que evoluiu de um simples sistema de console em Java para uma API REST corporativa. É perfeito para mostrar desde fundamentos de POO até arquitetura de sistemas profissionais.
+**Invisto+** is an educational and technical demonstration project that evolved from a simple Java console system to a professional REST API. It's perfect for showcasing everything from OOP fundamentals to professional system architecture.
 
-### 🎯 O que o projeto demonstra:
+### 🎯 What the project demonstrates:
 
-| Competência | Localização |
-|-------------|-------------|
-| Programação Orientada a Objetos (POO) | `console/` |
+| Skill | Location |
+|-------|----------|
+| Object-Oriented Programming (OOP) | `console/` |
 | Interfaces, Abstract Classes, Generics, Inheritance | `console/` |
 | Spring Boot 3.4, Java 21 | `backend/` |
-| REST API com OpenAPI/Swagger | `backend/` |
+| REST API with OpenAPI/Swagger | `backend/` |
 | PostgreSQL + Flyway Migrations | `backend/` |
-| Testes com JUnit 5 + Mockito | `backend/` |
-| Arquitetura em camadas (Clean Architecture) | `backend/` |
+| Testing with JUnit 5 + Mockito | `backend/` |
+| Layered Architecture (Clean Architecture) | `backend/` |
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📁 Repository Structure
 
 ```
 invistoplus/
-├── console/                # Versão POO em Console (Java 21)
-│   └── Trabalha orientação a objetos, generics, herança
+├── console/                # OOP Console Version (Java 21)
+│   └── Demonstrates OOP principles, generics, and inheritance
 │
-├── backend/                # API Spring Boot 3.4 REST
-│   └── Arquitetura profissional de backend
+├── backend/                # Spring Boot 3.4 REST API
+│   └── Professional backend architecture
 │
-├── ROADMAP.md              # Plano de evolução documentado
-└── README.md               # Este arquivo
+├── ROADMAP.md              # Detailed evolution roadmap
+└── README.md               # This file
 ```
 
 ---
 
-## ▶️ Como Executar
+## ▶️ How to Run
 
-### Console (POO Puro - Java 21)
+### Console (Pure OOP - Java 21)
 
 ```bash
 cd console
@@ -48,100 +48,101 @@ javac src/**/*.java
 java src/br/com/invistoplus/Main.java
 ```
 
-### Backend (Spring Boot - API REST)
+### Backend (Spring Boot - REST API)
 
 ```bash
 cd backend
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
-A API ficará em `http://localhost:8080` e Swagger UI em `http://localhost:8080/swagger-ui.html`.
+The API will be available at `http://localhost:8080` and Swagger UI at `http://localhost:8080/swagger-ui.html`.
 
 ---
 
-## 🧪 Testes
+## 🧪 Testing
 
 ```bash
-# Testes com H2 (sem Docker)
+# Tests with H2 (no Docker required)
 cd backend
 ./mvnw test
 
-# Verificar relatório
+# View test reports
 open target/surefire-reports/*.txt
 ```
 
 ---
 
-## 📌 Roadmap & Evolução
+## 📌 Roadmap & Evolution
 
-Consulte [ROADMAP.md](./ROADMAP.md) para detalhes completos.
+See [ROADMAP.md](./ROADMAP.md) for complete details.
 
-| Fase | Status | Descrição |
-|------|--------|-----------|
-| 1 | ✅ Concluído | POO em Console (Java 21) |
-| 2 | ✅ Concluído | REST API Spring Boot 3.4 |
-| 3 | 🔄 Em progresso | Testes automatizados |
-| 4 | ✅ Planejado | Frontend Vue.js/React |
-| 5 | ✅ Planejado | Docker + CI/CD |
-
----
-
-## 🧑‍💻 Sobre o Projeto
-
-**Invisto+** é um sistema de simulação de carteira de investimentos que permite:
-
-- ✅ Gestão de ativos: Ações, Fundos de Investimento, Títulos Públicos
-- ✅ Operações de compra/venda com cálculo de rendimentos
-- ✅ Persistência em banco de dados relacional
-- ✅ Documentação API interativa via Swagger
-- ✅ Arquitetura orientada a domínio
+| Phase | Status | Description |
+|-------|--------|-------------|
+| 1 | ✅ Complete | OOP in Console (Java 21) |
+| 2 | ✅ Complete | REST API Spring Boot 3.4 |
+| 3 | 🔄 In Progress | Automated Testing |
+| 4 | ✅ Planned | Vue.js/React Frontend |
+| 5 | ✅ Planned | Docker + CI/CD |
 
 ---
 
-## 🚀 Tecnologias
+## 🧑‍💻 About the Project
 
-| Camada | Console | Backend |
-|--------|---------|---------|
-| **Linguagem** | Java 21 | Java 21 |
+**Invisto+** simulates an investment portfolio management system that allows:
+
+- ✅ Asset management: Stocks, Investment Funds, Government Bonds
+- ✅ Buy/sell operations with return calculations
+- ✅ Relational database persistence
+- ✅ Interactive API documentation via Swagger
+- ✅ Domain-oriented architecture
+
+---
+
+## 🚀 Technology Stack
+
+| Layer | Console | Backend |
+|-------|---------|---------|
+| **Language** | Java 21 | Java 21 |
 | **Framework** | - | Spring Boot 3.4 |
-| **Persistência** | - | Spring Data JPA |
-| **Banco** | - | PostgreSQL (prod), H2 (dev) |
+| **Persistence** | - | Spring Data JPA |
+| **Database** | - | PostgreSQL (prod), H2 (dev) |
 | **Migrations** | - | Flyway |
 | **API Docs** | - | OpenAPI 3/Swagger UI |
-| **Testes** | - | JUnit 5, Mockito |
+| **Testing** | - | JUnit 5, Mockito |
 | **Build** | javac | Maven |
 
 ---
 
 ## 📦 Tags
 
-Use as tags do Git para ver versões específicas:
+Use Git tags to view specific versions:
 
-| Tag | Descrição |
-|-----|-----------|
-| `v0.0.1` | Versão inicial do console (POO puro) |
-| `main` | Versão atual com console + backend |
-
----
-
-## 📖 Recursos Adicionais
-
-- **[Roadmap Detalhado](./ROADMAP.md)** — Plano completo de evolução
-- **[Backend README](./backend/README.md)** — Documentação da API
-- **[Console README](./console/README.md)** — Documentação do projeto original
+| Tag | Description |
+|-----|-------------|
+| `v0.0.1` | Initial console version (Pure OOP) |
+| `main` | Current version with console + backend |
 
 ---
 
-## 🤝 Contribuições
+## 📖 Additional Resources
 
-Se quiser contribuir, fique à vontade! Abra um **Issue** ou envie um **Pull Request**.
-
----
-
-## 📄 Licença
-
-Este projeto está sob licença MIT - sinta-se livre para usar, modificar e distribuir.
+- **[Detailed Roadmap](./ROADMAP.md)** — Complete evolution plan
+- **[Backend README](./backend/README.md)** — API documentation
+- **[Console README](./console/README.md)** — Original project documentation
+- **[Leia em Português](./README-PT.md)** — Versão em português
 
 ---
 
-*Desenvolvido por Jefferson Gomes para estudo e portfólio técnico.*
+## 🤝 Contributions
+
+Feel free to contribute! Open an **Issue** or submit a **Pull Request**.
+
+---
+
+## 📄 License
+
+This project is licensed under MIT - feel free to use, modify, and distribute.
+
+---
+
+*Developed by Jefferson Gomes for study and technical portfolio.*

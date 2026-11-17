@@ -1,8 +1,6 @@
-# Invisto+ 📈💼
+# Invisto+ Console (Pure OOP)
 
-🌎 Leia em [Português](README.md)
-
-Invisto+ is a project designed to practice advanced Object-Oriented Programming concepts in Java, exploring **interfaces**, **abstract classes**, **generics**, and **inheritance**.
+Invisto+ is designed to practice advanced Object-Oriented Programming concepts in Java 21, exploring **interfaces**, **abstract classes**, **generics**, and **inheritance**.
 
 The system simulates an investment portfolio, allowing operations such as **buy**, **sell**, **withdraw**, and **calculate returns** for different types of financial assets.
 
@@ -24,78 +22,44 @@ The system simulates an investment portfolio, allowing operations such as **buy*
 
 Essential methods:
 
-* `buy()`
-* `sell()`
-* `withdraw()`
-* `calculateReturn()`
+* `calculateYield()` — yield calculation
+* `getName()` — asset identification
 
-### 🔹 Abstract Class `InvestmentTypes<T>`
+### 🔹 Abstract Class `TypesInvestments<T>`
 
 Defines default behavior and generic contracts for:
 
-* `buy()`
-* `sell()`
-* `calculateReturn()`
-
-More specific behaviors for subclasses:
-
-* `withdraw()`
-* `listReturn()`
+* `getName()` — inheritance
+* `addInvestment()` — internal management
+* `listInvestments()` — display
+* `totalYield()` — consolidated calculation via Stream API
 
 ### 🔹 Concrete Classes
 
-Each one represents a real investment type:
-
-* `Stock` 🏛️ — variable income asset
+* `Stock` 🏛️ — variable income (equity)
 * `InvestmentFund` 📊 — diversified funds
-* `GovernmentBond` 🏦 — fixed income asset
+* `PublicBond` 🏦 — fixed income
 
 ---
 
-## 🚀 Features
-
-* Investment registration
-* Buy/sell operations
-* Specific withdrawals by asset type
-* Return calculations per investment
-* Console output demonstrating functionality
-
----
-
-## 🛠️ Technologies Used
-
-* **Java 21** ☕
-* **OOP paradigm**
-* **Collections** and **Generics**
-* Design best practices
-
----
-
-## ▶️ How to Run
+## 🚀 How to Run
 
 ```bash
-# Clone repository
-git clone https://github.com/Jprogram-Java-Projects/invistoplus.git
-cd invistoplus
-
-# Compile and execute
 javac src/**/*.java
-java src/Main.java
+java src/br/com/invistoplus/Main.java
 ```
 
 ---
 
-## 📌 Next Improvements
+## 📌 Version
 
-* Data persistence using files or database
-* GUI (JavaFX or Web)
-* Portfolio performance reports
-* Unit testing with JUnit
+* Git Tag: `v0.0.1`
+* Java 21
+* Pure OOP - no frameworks
 
 ---
 
-## 🧑‍💻 Author
+## 📖 Additional Resources
 
-Project developed for study and improvement of Java OOP concepts.
-
-Feel free to contribute! Pull requests are welcome 🚀✨
+- **[English README.md](../README.md)** — Project overview in English
+- **[Portuguese README.md](../README-PT.md)** — Versão em português

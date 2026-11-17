@@ -1,71 +1,76 @@
 # Invisto+ Backend (Spring Boot REST API)
 
-API REST profissional desenvolvida com **Spring Boot 3.4** para gerenciamento de carteira de investimentos.
+Professional REST API built with **Spring Boot 3.4** for managing investment portfolios.
 
 ---
 
-## 🎯 Tecnologias
+## 🎯 Features
 
-| Tecnologia | Versão |
-|------------|--------|
-| **Java** | 21 |
-| **Spring Boot** | 3.4.0 |
-| **Spring Data JPA** | Persistência ORM |
-| **PostgreSQL** | Banco de dados |
-| **Flyway** | Migrations |
-| **OpenAPI/Swagger** | Documentação |
-| **JUnit 5 + Mockito** | Testes unitários |
-| **Testcontainers (opcional)** | Testes de integração**
+- ✅ Investment management: Stocks, Funds, Government Bonds
+- ✅ Buy/sell operations with automated return calculations
+- ✅ Relational database persistence
+- ✅ Interactive Swagger API documentation
+- ✅ Domain-oriented (Clean Architecture) layer separation
 
 ---
 
-## 🚀 Como Executar
-
-### Desenvolvimento (sem Docker - H2)
+## 🚀 How to Run
 
 ```bash
 cd backend
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
-A API ficará em `http://localhost:8080` e Swagger UI em `http://localhost:8080/swagger-ui.html`.
-
-### Produção (com PostgreSQL)
-
-```bash
-./mvnw spring-boot:run -Dspring-boot.run.profiles=prod
-```
+The API will be available at `http://localhost:8080` and Swagger UI at `http://localhost:8080/swagger-ui.html`.
 
 ---
 
-## 🔌 Endpoints API
-
-| Endpoint | Método | Descrição |
-|----------|--------|-------------|
-| `/api/v1/investments` | GET | Listar todos os investimentos |
-| `/api/v1/investments/{id}` | GET | Buscar por ID |
-| `/api/v1/investments/stocks` | POST | Criar ação |
-| `/api/v1/investments/funds` | POST | Criar fundo |
-| `/api/v1/investments/bonds` | POST | Criar título público |
-| `/api/v1/investments/total-yield` | GET | Rendimento total |
-| `/api/v1/investments/{id}` | DELETE | Remover investimento |
-
----
-
-## 🧪 Testes
+## 🧪 Testing
 
 ```bash
-# Testes com H2 (sem Docker)
+cd backend
 ./mvnw test
-
-# Testes com Testcontainers (requer Docker)
-./mvnw test -Dspring.profiles.active=testcontainers
 ```
+
+Tests run with H2 in-memory database - no Docker required for development.
 
 ---
 
-## 📌 Status
+## 🔌 API Endpoints
 
-* **Phase 1:** ✅ Implementado
-* **Phase 2:** ✅ Endpoint REST criados
-* **Phase 3:** 🔄 Testes em andamento
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/v1/investments` | GET | List all investments |
+| `/api/v1/investments/{id}` | GET | Get investment by ID |
+| `/api/v1/investments/stocks` | POST | Create a stock |
+| `/api/v1/investments/funds` | POST | Create investment fund |
+| `/api/v1/investments/bonds` | POST | Create public bond |
+| `/api/v1/investments/total-yield` | GET | Get total portfolio yield |
+| `/api/v1/investments/{id}` | DELETE | Remove investment |
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Language** | Java 21 |
+| **Framework** | Spring Boot 3.4 |
+| **Persistence** | Spring Data JPA |
+| **Database** | PostgreSQL (prod), H2 (dev) |
+| **Migrations** | Flyway |
+| **API Docs** | OpenAPI 3/Swagger UI |
+| **Testing** | JUnit 5, Mockito |
+| **Build** | Maven |
+
+---
+
+## 📖 Additional Resources
+
+- **[Detailed Roadmap](../ROADMAP.md)** — Evolution plan
+- **[English README.md](../README.md)** — Project overview
+- **[Portuguese README.md](../README-PT.md)** — Versão em português
+
+---
+
+*Developed by Jefferson Gomes for study and technical portfolio.*
